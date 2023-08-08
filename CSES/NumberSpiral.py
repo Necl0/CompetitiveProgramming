@@ -2,7 +2,7 @@ for i in range(int(input())):
     y, x = list(map(int, input().split()))
     m = max(y, x)
 
-    d = sum([2 * i for i in range(1, m)] + [1])
+    d = m**2 - m + 1
 
     if y==x:
         print(d)
